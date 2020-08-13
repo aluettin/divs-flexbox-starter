@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+  /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -97,25 +97,72 @@ textarea {
 
 
 html {
-  background-color: #000;
+  background-color: #222;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+header,
+footer {
+  height: 80px;
+  width: 100%;
 }
 
-.div-1, .div-2, .div-3 {
+main {
+  border-bottom: 2px solid gray;
+  height: 200px;
+  margin-bottom: 40px;
+  width: 100%;
+  }
+
+header,
+footer,
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+header {
+  padding-top: 75px;
+}
+
+header h1 {
+  font-family: 'Cardo', serif;
+  font-size: 4em;
+}
+
+main h2 {
+  font-size: 1.7em;
+}
+
+main h2 span {
+  color: pink;
+  font-family: 'Cardo', serif;
+}
+
+footer {
+  border-top: 2px solid gray;
+  margin-top: 40px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
@@ -123,16 +170,28 @@ body {
   width: 30%;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
+  font-size: 1.3em;
   height: 300px;
-  padding: 40px;
 }
 
-.div-2 {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+.flex-items span {
+  color: pink;
+}
+
+#div-2 {
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  padding-left: 40px;
+  padding-right: 40px;
 
 }
+
+.fa {
+  color: pink;
+  padding-right: 30px;
+}
+
+
 
 
 /* ==========================================================================
